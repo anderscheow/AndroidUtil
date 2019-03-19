@@ -1,4 +1,4 @@
-package io.github.anderscheow.androidutil.appCompat
+package io.github.anderscheow.androidutil.appCompat.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,11 +8,10 @@ import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.lifecycle.LifecycleOwner
 import io.github.anderscheow.androidutil.BR
-import io.github.anderscheow.androidutil.appCompat.fragment.FoundationFragment
-import io.github.anderscheow.androidutil.appCompat.util.ProgressDialogMessage
-import io.github.anderscheow.androidutil.appCompat.util.ToastMessage
-import io.github.anderscheow.androidutil.appCompat.viewModel.BaseAndroidViewModel
 import io.github.anderscheow.androidutil.kotlinExt.toast
+import io.github.anderscheow.androidutil.viewModel.BaseAndroidViewModel
+import io.github.anderscheow.androidutil.viewModel.util.ProgressDialogMessage
+import io.github.anderscheow.androidutil.viewModel.util.ToastMessage
 
 abstract class LifecycleFragment<VM : BaseAndroidViewModel<*>> : FoundationFragment() {
 

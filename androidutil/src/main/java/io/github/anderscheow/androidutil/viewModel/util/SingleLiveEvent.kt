@@ -14,7 +14,7 @@
  *  limitations under the License.
  */
 
-package io.github.anderscheow.androidutil.appCompat.util
+package io.github.anderscheow.androidutil.viewModel.util
 
 import android.util.Log
 import androidx.annotation.MainThread

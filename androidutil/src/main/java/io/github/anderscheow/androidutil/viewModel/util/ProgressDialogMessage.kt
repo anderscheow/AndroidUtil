@@ -1,4 +1,4 @@
-package io.github.anderscheow.androidutil.appCompat.util
+package io.github.anderscheow.androidutil.viewModel.util
 
 import androidx.annotation.StringRes
 import androidx.lifecycle.LifecycleOwner

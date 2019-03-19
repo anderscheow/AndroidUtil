@@ -1,12 +1,12 @@
-package io.github.anderscheow.androidutil.appCompat.viewModel
+package io.github.anderscheow.androidutil.viewModel
 
 import android.app.Application
 import androidx.annotation.StringRes
 import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
 import androidx.lifecycle.AndroidViewModel
-import io.github.anderscheow.androidutil.appCompat.util.ProgressDialogMessage
-import io.github.anderscheow.androidutil.appCompat.util.ToastMessage
+import io.github.anderscheow.androidutil.viewModel.util.ProgressDialogMessage
+import io.github.anderscheow.androidutil.viewModel.util.ToastMessage
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
