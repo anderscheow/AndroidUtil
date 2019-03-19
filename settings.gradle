@@ -1,1 +1,1 @@
-include ':app', ':androidutil', ':androidutil-lifecycle'
+include ':app', ':androidutil'

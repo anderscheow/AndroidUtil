@@ -1,4 +1,4 @@
-package io.github.anderscheow.androidutil.appCompat.util
+package io.github.anderscheow.androidutil.viewModel.util
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.Observer

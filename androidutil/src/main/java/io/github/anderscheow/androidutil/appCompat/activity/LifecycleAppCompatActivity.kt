@@ -1,13 +1,12 @@
-package io.github.anderscheow.androidutil.appCompat
+package io.github.anderscheow.androidutil.appCompat.activity
 
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import io.github.anderscheow.androidutil.BR
-import io.github.anderscheow.androidutil.appCompat.activity.FoundationAppCompatActivity
-import io.github.anderscheow.androidutil.appCompat.util.ProgressDialogMessage
-import io.github.anderscheow.androidutil.appCompat.util.ToastMessage
-import io.github.anderscheow.androidutil.appCompat.viewModel.BaseAndroidViewModel
+import io.github.anderscheow.androidutil.viewModel.BaseAndroidViewModel
+import io.github.anderscheow.androidutil.viewModel.util.ProgressDialogMessage
+import io.github.anderscheow.androidutil.viewModel.util.ToastMessage
 import org.jetbrains.anko.toast
 
 abstract class LifecycleAppCompatActivity<VM : BaseAndroidViewModel<*>> : FoundationAppCompatActivity() {

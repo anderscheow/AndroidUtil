@@ -1,4 +1,4 @@
-package io.github.anderscheow.androidutil.appCompat.viewModel;
+package io.github.anderscheow.androidutil.viewModel;
 
 import android.app.Application;
 import androidx.databinding.ObservableField;
