@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">androidutil</string>
+    <string name="prompt_please_wait">Please wait…</string>
+    <string name="prompt_internet_required">Internet is required.</string>
+    <string name="prompt_please_try_again">Please try again</string>
+    <string name="action_retry">Retry</string>
+</resources>

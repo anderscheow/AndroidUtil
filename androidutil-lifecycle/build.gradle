@@ -1,0 +1,39 @@
+rootProject.androidUtilLifecycleModulePlugins.each {
+    apply plugin: it
+}
+
+android {
+    def ext = rootProject.extensions.ext
+    compileSdkVersion ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion ext.android.minSdkVersion
+        targetSdkVersion ext.android.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    dataBinding {
+        enabled = true
+    }
+    androidExtensions {
+        experimental = true
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dokka {
+    outputFormat = 'html'
+    outputDirectory = "$buildDir/javadoc"
+}
+
+dependencies {
+    rootProject.androidUtilLifecycleModuleDependencies.each {
+        add(it.configuration, it.dependency, it.options)
+    }
+}
+
+apply plugin: 'com.github.dcendents.android-maven'
+
+apply from: rootProject.file('gradle/gradle-mvn-push.gradle')
